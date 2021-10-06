@@ -15,4 +15,7 @@ dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
+    // https://mvnrepository.com/artifact/org.testng/testng
+    testImplementation group: 'org.testng', name: 'testng', version: '6.8.8'
+
 }
