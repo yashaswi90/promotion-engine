@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.List;
 
 public interface CartService {
-    void addCartItems(HashMap<Character, Integer> cartItems);
-    HashMap<Character, Integer> getCartItems();
+    void addCartItems(HashMap<String, Integer> cartItems);
+    HashMap<String, Integer> getCartItems();
 
 }

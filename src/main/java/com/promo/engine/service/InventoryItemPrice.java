@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 public interface InventoryItemPrice {
 
-    void registeredItemPrice(HashMap<Character, Long> perUnitPrice);
-    void registeredItemPrice(Character skuid, Long price);
-    HashMap<Character, Long> getItemPrice();
+    void registeredItemPrice(HashMap<String, Long> perUnitPrice);
+    void registeredItemPrice(String skuid, Long price);
+    HashMap<String, Long> getItemPrice();
 }

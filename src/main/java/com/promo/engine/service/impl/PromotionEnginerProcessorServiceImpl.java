@@ -7,14 +7,14 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class PromotionEnginerProcessorServiceImpl implements PromotionEnginerProcessorService {
-    public long applyPromotionsToCartItems(HashMap<Character, Integer> cartItems,
-                                           HashMap<Character, Long> perUnitPrice,
-                                           HashMap<Character, ActivePromotionsItems> activePromotions) {
+    public long applyPromotionsToCartItems(HashMap<String, Integer> cartItems,
+                                           HashMap<String, Long> perUnitPrice,
+                                           HashMap<String, ActivePromotionsItems> activePromotions) {
         int count = 0;
         long total = 0;
-        for (Map.Entry<Character, Integer> s : cartItems.entrySet()) {
+        for (Map.Entry<String, Integer> s : cartItems.entrySet()) {
 
-            Character skuId = s.getKey();
+            String skuId = s.getKey();
             Integer quantity = s.getValue();
 
             Long pricePerUnit = perUnitPrice.get(skuId);

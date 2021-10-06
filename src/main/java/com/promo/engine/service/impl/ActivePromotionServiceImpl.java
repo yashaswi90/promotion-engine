@@ -6,23 +6,23 @@ import com.promo.engine.service.ActivePromotionService;
 import java.util.HashMap;
 
 public class ActivePromotionServiceImpl implements ActivePromotionService {
-    HashMap<Character, ActivePromotionsItems> activePromotions=new HashMap<>();
+    HashMap<String, ActivePromotionsItems> activePromotions=new HashMap<>();
 
 
     @Override
-    public boolean addActivePromotion(Character ch, ActivePromotionsItems promotionsItems) {
+    public boolean addActivePromotion(String ch, ActivePromotionsItems promotionsItems) {
         activePromotions.put(ch,promotionsItems);
         return true;
     }
 
     @Override
-    public boolean addAllActivePromotion(HashMap<Character, ActivePromotionsItems> activePromotions) {
+    public boolean addAllActivePromotion(HashMap<String, ActivePromotionsItems> activePromotions) {
         activePromotions.putAll(activePromotions);
         return true;
     }
 
     @Override
-    public HashMap<Character, ActivePromotionsItems> getActivePromotions() {
+    public HashMap<String, ActivePromotionsItems> getActivePromotions() {
         return activePromotions;
     }
 }

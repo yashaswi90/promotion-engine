@@ -3,10 +3,10 @@ package com.promo.engine.domain;
 public class ActivePromotionsItems {
 
     private long price;
-    private char skuId;
+    private String skuId;
     private int quantity;
 
-    public ActivePromotionsItems(long price, char skuId, int quantity) {
+    public ActivePromotionsItems(long price, String skuId, int quantity) {
         this.price = price;
         this.skuId = skuId;
         this.quantity = quantity;
@@ -20,11 +20,11 @@ public class ActivePromotionsItems {
         this.price = price;
     }
 
-    public char getSkuId() {
+    public String getSkuId() {
         return skuId;
     }
 
-    public void setSkuId(char skuId) {
+    public void setSkuId(String skuId) {
         this.skuId = skuId;
     }
 

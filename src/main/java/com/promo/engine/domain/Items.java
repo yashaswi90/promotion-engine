@@ -2,11 +2,11 @@ package com.promo.engine.domain;
 
 
 public class Items {
-
     private int quantity;
-    private char skuId;
+    private String skuId;
+    private long price;
 
-    public Items(int quantity, char skuId) {
+    public Items(int quantity, String skuId) {
         this.quantity = quantity;
         this.skuId = skuId;
     }
@@ -19,11 +19,19 @@ public class Items {
         this.quantity = quantity;
     }
 
-    public char getSkuId() {
+    public String getSkuId() {
         return skuId;
     }
 
-    public void setSkuId(char skuId) {
+    public void setSkuId(String skuId) {
         this.skuId = skuId;
+    }
+
+    public long getPrice() {
+        return price;
+    }
+
+    public void setPrice(long price) {
+        this.price = price;
     }
 }

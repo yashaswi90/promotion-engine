@@ -5,15 +5,15 @@ import com.promo.engine.service.CartService;
 import java.util.HashMap;
 
 public class CartServiceImpl implements CartService {
-    HashMap<Character, Integer> cartItems = new HashMap<>();
+    HashMap<String, Integer> cartItems = new HashMap<>();
 
     @Override
-    public void addCartItems(HashMap<Character, Integer> ci) {
+    public void addCartItems(HashMap<String, Integer> ci) {
         cartItems.putAll(ci);
     }
 
     @Override
-    public HashMap<Character, Integer> getCartItems() {
+    public HashMap<String, Integer> getCartItems() {
         return cartItems;
     }
 }

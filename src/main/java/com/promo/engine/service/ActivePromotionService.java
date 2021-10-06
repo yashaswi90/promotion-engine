@@ -5,8 +5,8 @@ import com.promo.engine.domain.ActivePromotionsItems;
 import java.util.HashMap;
 
 public interface ActivePromotionService {
-    boolean addActivePromotion(Character ch, ActivePromotionsItems promotionsItems);
-    boolean addAllActivePromotion(HashMap<Character, ActivePromotionsItems> activePromotions);
+    boolean addActivePromotion(String ch, ActivePromotionsItems promotionsItems);
+    boolean addAllActivePromotion(HashMap<String, ActivePromotionsItems> activePromotions);
 
-    HashMap<Character, ActivePromotionsItems> getActivePromotions();
+    HashMap<String, ActivePromotionsItems> getActivePromotions();
 }
